@@ -1,0 +1,16 @@
+{
+  "name": "prng",
+  "version": "1.0.0",
+  "main": "./out/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -b",
+    "watch": "tsc -b -w"
+  },
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "jimp": "^0.16.1"
+  }
+}
