@@ -1,4 +1,5 @@
 import Img from "./img";
+import LinearCongruentialGenerator from "./rng/linearCongruential";
 import MiddleSquareGenerator from "./rng/middleSquare";
 import ParkMillerGenerator from "./rng/parkmiller";
 import { RandomGenerator } from "./types";
@@ -9,7 +10,8 @@ const seeds = new Array<number>(8)
 const size = 100;
 const generators: Record<string, RandomGenerator> = {
   MiddleSquare: new MiddleSquareGenerator(),
-  ParkMiller: new ParkMillerGenerator()
+  ParkMiller: new ParkMillerGenerator(),
+  LinearCongruential: new LinearCongruentialGenerator()
 };
 
 function generatePixelRow(rng: RandomGenerator, size: number) {
